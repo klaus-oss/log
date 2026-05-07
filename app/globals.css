@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bgc: linear-gradient(to top, rgb(252, 252, 252), rgba(208, 210, 212, 0.76) 95%);
+  --primary: #1174f7;
+  --primary-hover: #0059ff;
+}
+
+body {
+  background: linear-gradient(to top, rgb(252, 252, 252), rgba(208, 210, 212, 0.76) 95%);
+  background-repeat: no-repeat;
+  font-family: var(--font-poppins), sans-serif;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

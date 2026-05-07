@@ -1,0 +1,1095 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bgc: linear-gradient(to top, rgb(252, 252, 252), rgba(208, 210, 212, 0.76) 95%);
+}
+
+
+body {
+    background: linear-gradient(to top, rgb(252, 252, 252), rgba(208, 210, 212, 0.76) 95%);
+    background-repeat: no-repeat;
+    font-family: poppins;
+      opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+    
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+
+.home {
+    height: 100vh;
+    background-image: url(./image/homebg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.header {
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur (1rem);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.navigation {
+    display: flex;
+    place-content: space-between;
+    padding: .5rem 1rem;
+    align-items: baseline;
+    text-transform: capitalize;
+}
+
+.icon {
+    color: #fff;
+    /* text-transform: capitalize; */
+    font-size: 1.1rem;
+}
+
+.navigation ul {
+    display: flex;
+    align-items: baseline;
+    list-style: none;
+    gap: 1.5rem;
+    font-weight: 550;
+}
+
+.navigation li {
+    transition: transform 300ms linear;
+}
+
+.navigation li:hover {
+    transform: scale(1.1);
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #fff;
+    transition: transform 300ms linear;
+}
+
+.sign {
+    border: .01rem solid #1174f7;
+    padding: .5rem 1rem;
+    border-radius: .3rem;
+    background-color: #1174f7;
+    font-weight: 550;
+    transition: transform 300ms linear;
+}
+
+.navigation .sign:hover {
+    transform: scale(1.1);
+}
+
+/* Hamburger Button */
+
+ .hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    position: fixed;
+    right: 0;
+}
+        
+.hamburger span {
+    display: none;
+    position: relative;
+    top: 1rem;
+    right: 1rem;
+    height: .3rem;
+    width: 100%;
+    background: white;
+    border-radius: 2px;
+    transition: 0.3s;
+}
+        
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+        
+.nav-menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.5rem;
+    transition: color 0.3s
+}
+
+.hcontent {
+    color: #fff;
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+    top: 35%;
+    padding: 0 1rem;
+    max-width: 50%;
+    text-transform: capitalize;
+}
+
+.hcontent .hch2 {
+    font-size: 3rem;
+    padding: 1.5rem 0;
+
+}
+
+.hcontent .hcp {
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+
+.hrank {
+    padding: 1rem 0;
+}
+
+.hrank ul{
+    display: flex;
+    gap: 3rem;
+    list-style: none;
+    font-size: 1.5rem;
+    font-weight: 550;
+}
+
+.hrank span {
+    color: #1174f7;
+    padding-left: .5rem;
+}
+
+.hbtn {
+    min-width: 25%;
+    max-width: 50%;
+    margin: 1rem 0;
+    padding: 1rem ;
+    background-color: #1174f7;
+    border: none;
+    color: #fff;
+    border-radius: .3rem;
+    font-weight: 550;
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    transition: transform 300ms linear;
+    white-space: nowrap;
+}
+
+.hbtn:hover {
+    transform: scale(1.1);
+}
+
+/* styling about page */ 
+
+.about {
+    height: 80vh;
+    margin: 8rem 5rem 0;
+    text-transform: capitalize;
+}
+
+.ap {
+    padding: 1rem;
+}
+
+.foot {
+    display: flex;
+    place-content: space-evenly;
+    padding: 3rem 1rem;
+    gap: 2rem;
+}
+
+.finfo ul{
+    list-style: none;
+}
+
+.ah2 {
+    color: #1174f7;;
+}
+
+.filist {
+    margin-bottom: 1rem;
+}
+
+.filist li {
+    font-weight: 520;
+    transition: transform 300ms linear;
+
+}
+
+.filist li:hover {
+    transform: scale(1.1);
+    color: #317ada;
+}
+
+.finfo ul li {
+    padding: .3rem 1rem;
+}
+
+.conlist li:first-child{
+    list-style: none;
+    background-image: url(.//image/phone-504.svg);
+    background-repeat: no-repeat;
+    background-size: 1.5rem;
+    padding-left: 2rem;
+    background-position: 0 .5rem;
+}
+
+.conlist li:last-child {
+    list-style: none;
+    background-image: url(.//image/mail-2569.svg);
+    background-repeat: no-repeat;
+    background-size: 1.5rem;
+    padding-left: 2rem;
+    background-position: 0 .5rem;
+}
+.footericons {
+    display: flex;
+    gap: 1.5rem;
+    place-content: center;
+}
+
+.facebook1,
+.instagram1,
+.tweeter1,
+.tiktok {
+    margin: 1rem 0;
+    padding: 1rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.facebook1 {
+    background-image: url(./image/facebook-app-symbol.png);
+}
+
+.tweeter1 {
+    background-image: url(./image/twitter\(2\).png);
+}
+
+.tiktok {
+    background-image: url(./image/tik-tok.png);
+}
+
+.instagram1 {
+    background-image: url(./image/telegram.png);
+}
+/* styling  sign */
+
+.container {
+    position: relative;
+    height: 110vh;
+    margin: 4rem;
+}
+
+.section {
+    display: flex;
+    border-radius: .3rem;
+    text-transform: capitalize;
+    align-items: center;
+    justify-content: center;
+    /* border: .01rem solid #999; 
+     box-shadow: .01rem .01rem 1rem #999; */
+}
+
+.article {  
+   border-radius: .3rem;
+   margin-top: 1rem;
+   box-shadow: .01rem .01rem 1rem #999;
+}
+
+.top {
+    text-align: center;
+
+}
+
+.sth2 {
+    font-size: 3rem;
+}
+
+.sign-alt {
+    display: flex;
+    place-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    width: 100%;
+    margin: 1rem;
+}
+
+.sbtn {
+    text-transform: capitalize;
+    font-weight: 550;
+    padding: 1rem;
+    width: 25%;
+    border-radius: .3rem;
+}
+
+.login {
+    color: #fff;
+    border: .01rem solid;
+    background-color: #1174f7;
+    transition: transform 300ms linear;
+}
+
+/* .login:hover {
+    transform: scale(1.08);
+} */
+
+.signup {
+    
+    border: .1rem solid #999;
+    transition: transform 300ms linear;
+
+}
+
+.signup:hover{
+    border: none;
+    background-color: #1174f7;
+    color: #fff;
+    transform: scale(1.08);
+}
+
+.smh2 {
+    text-align: center;
+    padding: 1rem;
+}
+
+.signopt {
+    position: relative;
+    display: grid;
+    gap: .5rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 1rem 8rem;
+    place-items: center;
+}
+
+.apple,
+.google,
+.x {
+    border: .01rem solid #999;
+    border-radius: .3rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding: 2rem 5rem;
+    transition: transform 300ms linear;
+}
+
+.opt:hover {
+    transform: scale(1.08);
+}
+
+.apple{
+    background-image: url(./image/apple-logo.png);
+}
+
+.google{
+    background-image: url(./image/google.png);
+}
+
+.x{
+    background-image: url(./image/twitter.png);
+}
+
+.linetext {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 0 15rem;
+  margin-top: 4rem;
+}
+
+.linetext::before,
+.linetext::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #888;
+}
+
+.linetext::before {
+  margin-right: 1rem;
+}
+
+.linetext::after {
+  margin-left: 1rem;
+}
+
+form {
+    margin: 3rem 8rem;
+}
+
+.bottum input{
+    margin: .5rem 0;
+    width: 100%;
+    padding: 1rem;
+    border-radius: .3rem;
+    border: .1rem solid #999;
+}
+
+.sfooter {
+    display: flex;
+    flex-direction: row;
+    place-content: space-between;
+}
+
+.sfoot {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.sfoot input[type="checkbox"] {
+    width: 1rem;
+    height: 1rem;
+    cursor: pointer;
+}
+
+.sfoot label {
+    cursor: pointer;
+}
+
+.forgotpass:hover {
+    color: #317ada;
+    transform: scale(1.03);
+    transition: transform 300ms linear;
+}
+
+.logbtn {
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem 0;
+    background-color: #1174f7;
+    color: #fff;
+    border: none;
+    border-radius: .3rem;
+    text-transform: capitalize;
+    font-weight: 550;
+    transition: transform 300ms linear;
+}
+
+.logbtn:hover{
+    transform: scale(1.08);
+}
+
+.aside {
+    flex: 1;
+    /* background-image: url(./image/bmw\ 4.jpg);
+    background-position: center;
+    position: relative;
+    background-repeat: no-repeat; */
+    height: 100vh;
+    /* border-radius: .3rem .3rem; */
+    overflow: hidden;
+    place-content: center;
+
+}
+
+.aside img {
+ border-radius: .3rem;
+ opacity: .9;
+}
+
+/* styling category */
+
+
+.categories {
+    height: fit-content;
+    margin-top: -8rem;
+
+}
+
+.buy {
+    height: fit-content;
+    position: relative;
+    top: 12rem;
+}
+
+.cbh2 {
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 1rem;
+    text-transform: capitalize;
+}
+
+.cardcontainer {
+    padding: .5rem ;
+    margin: .5rem ;
+}
+
+.sedan,
+.suv,
+.pickup,
+.minivan{
+    height: fit-content;
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border: .01rem solid #999;
+    border-radius: .3rem;
+    max-width: 25%;
+}
+
+
+.card:hover {
+    transition: transform 300ms linear;
+    transform: scale(1.05);
+}
+
+.cardcontent ul {
+    list-style: none;
+}
+
+.cardcontent span {
+    font-weight: 550;
+    
+}
+
+.cardcontent li {
+    padding: .3rem 1.5rem;
+    text-transform: capitalize;
+}
+
+.cbbtn {
+    text-transform: capitalize;
+    font-weight: 550;
+    width: 100%;
+    padding: 1rem 10%;
+    border-radius: 0 0 .3rem .3rem;
+    color: #fff;
+    background-color: #1174f7;
+    border: none;
+}
+
+.cbbtn:hover {
+    background-color: #0059ff;
+    transition: transform 300ms linear;
+}
+
+.card .cimg{
+    flex: 1;
+}
+
+.cimg img {
+    max-width: 100%;
+    border-radius: .3rem .3rem 0 0;
+}
+
+.card .cardcontent {
+    flex: 1;
+}
+
+.rent {
+    margin-top: 15rem;
+    height: fit-content;
+}
+
+/* styling service */
+
+.service {
+    margin-top: 3.5rem;
+}
+
+.sellservice,
+.rentalservice,
+.garagesercive {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 1rem;
+    border: .01rem solid #999;
+    padding: 1rem .5rem;
+    align-items: first baseline baseline;
+    margin-bottom: 1rem;
+    width: 100vw;
+}
+
+.serviceimage {
+    width: 100%;
+}
+
+.servicecontent {
+    place-content: center;
+}
+
+.serviceimage img {
+    max-width: 90%;
+    border-radius: .3rem;
+    margin-left: 1rem;
+}
+
+.sh2 {
+    text-align: center;
+    padding: 1rem;
+    text-transform: capitalize;
+}
+
+
+/* responsive style setting */
+
+@media (max-width: 1023px) {
+    .sellservice,
+    .rentalservice,
+    .garagesercive  {
+    align-items: center;
+}
+}
+
+@media (max-width: 767px) {
+  
+    body {
+        overflow-x: hidden;
+    }
+    .home {
+        width: 100%;
+        background-position: contain;
+    }
+
+    .header {
+        max-width: 100%;
+    }
+
+    .hhead .hch2 {
+        font-size: 2.2rem;
+        padding: .5rem 0;
+    }
+
+    .hhead .hcp {
+        padding: .5rem 0;
+        font-size: 1.3rem;
+    }
+    
+    .hrank ul{
+        font-size: 1.3rem;
+    }
+
+    .hbtn {
+        font-size: .5
+        rem;
+        padding: .7rem;
+        
+    }
+
+.hamburger {
+    display: flex;
+}
+
+.navigation .nav-menu {
+    position: fixed;
+    top: 3.5rem;
+    right: -100%;
+    width: 15rem;
+    height: calc(100vh);
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(1rem);
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+    transition: 0.3s;
+}
+            
+.nav-menu.active {
+    right: 0;
+}
+            
+.nav-menu li {
+    margin: .5rem 0;
+    width: 80%;
+    text-align: center;
+}
+            
+.nav-menu li a {
+    display: block;
+    padding: .5rem;
+    border-bottom: .01rem solid #999;
+}
+
+.nav-menu .sign a{
+    border-bottom: none;
+}
+            
+.hamburger span {
+    display: flex;
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+            
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+            
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+}
+
+/* about page */ 
+
+.about {
+    font-size: .8rem;
+    margin: 1rem;
+    overflow-x: hidden;
+}
+
+.ah2 {
+    font-size: .9rem;
+}
+
+.facebook1,
+.instagram1,
+.tweeter1,
+.tiktok {
+    padding: .75rem;
+    margin: .75rem 0;
+}
+
+.foot {
+    gap: .5rem;
+    padding: 1.5rem .5rem;
+}
+
+.conlist li:first-child {
+    background-size: 1rem;
+}
+
+.conlist li:last-child {
+    background-size: 1rem;
+}
+
+/*service page */
+
+.service {
+    font-size: .75rem;
+}
+
+.sh2 {
+    font-size: 1.3rem;
+}
+
+.serviceimage img {
+    width: 100%;
+}
+
+
+.sellservice,
+.rentalservice,
+.garagesercive  {
+    align-items: center;
+}
+
+
+/* signup page */
+
+.container {
+    height: 90vh;
+    margin: 4rem 0;
+}
+
+.section {
+    display: flex;
+    border-radius: .3rem;
+    text-transform: capitalize;
+    align-items: center;
+    justify-content: center;
+    /* border: .01rem solid #999; 
+     box-shadow: .01rem .01rem 1rem #999; */
+}
+
+.article {  
+   border-radius: .3rem;
+   margin-top: 1rem;
+   box-shadow: .01rem .01rem 1rem #999;
+}
+
+.sth2, .smh2 {
+    font-size: 1.5rem;
+}
+
+.sign-alt  {
+    padding: .5rem;
+    gap: .5rem;
+    margin: none;
+}
+
+.sbtn{
+    font-size: .8rem;
+    padding: .8rem;
+    width: 20%;
+    margin-top: 1rem;
+}
+
+.signopt {
+    position: relative;
+    margin: .5rem 4.8rem;
+}
+
+.apple,
+.google,
+.x  {
+    padding: 1rem 3rem;
+    margin-bottom: 2rem;
+}
+
+.linetext {
+    margin: 0 5rem;
+}
+
+form {
+    margin: 1.5rem 3rem;
+}
+
+.bottum input {
+    padding: .8rem;
+}
+
+form label,
+form p {
+    font-size: .8rem;
+}
+
+.logbtn {
+    padding: .8rem;
+    font-size: .8rem;
+}
+
+/* categries page */
+
+.buy, .rent {
+    overflow-x: hidden;
+    
+}
+
+.cbh2 {
+    font-size: 1.7rem;
+    padding: .75rem;
+}
+
+.sedan,
+.suv,
+.pickup,
+.minivan{
+    display: flex;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    width: 100vh;
+}
+ 
+.cardcontainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.cardcontent li {
+    padding: .2rem 1.5rem;
+    font-size: .75rem;
+}
+
+.cbbtn {
+    padding: .7rem;
+    font-size: .75rem;
+}
+
+}
+
+@media(max-width: 480px) {
+    .home {
+        max-width: 480px;
+    }
+
+    .header {
+        max-width: 479px;
+    }
+
+    .hhead .hch2 {
+        font-size: 1.5rem;
+    }
+
+    .hhead .hcp {
+        font-size: .9rem;
+    }
+    
+    .hrank ul{
+        font-size: .9rem;
+    }
+
+    .hbtn {
+        font-size: .5rem
+        rem;
+        padding: .5rem;
+    }
+
+    /*about page */
+
+    .about {
+        font-size: .7rem;
+        margin: .5rem;
+    }
+
+    .facebook1,
+    .instagram1,
+    .tweeter1,
+    .tiktok {
+        padding: .5rem;
+        margin: .5rem 0;
+    }
+
+    .foot {
+        font-size: .5rem;
+        margin: 0;
+        gap: .1rem;
+        padding: 0;
+    }
+
+    .conlist li:first-child {
+        background-size: .7rem;
+    }
+
+    .conlist li:last-child {
+        background-size: .7rem;
+    }
+    /* service page */ 
+
+.service {
+    font-size: .5rem;
+}
+
+.sh2 {
+    font-size: 1rem;
+}
+
+.serviceimage img {
+    width: 100%;
+}
+
+
+.sellservice,
+.rentalservice,
+.garagesercive  {
+    align-items: center;
+}
+
+/* signup page */
+
+.container {
+    height: 80vh;
+    margin: 4rem 0;
+}
+
+.section {
+    display: flex;
+    border-radius: .3rem;
+    text-transform: capitalize;
+    align-items: center;
+    justify-content: center;
+    /* border: .01rem solid #999; 
+     box-shadow: .01rem .01rem 1rem #999; */
+}
+
+.article {  
+   border-radius: .3rem;
+   margin-top: 1rem;
+   box-shadow: .01rem .01rem 1rem #999;
+}
+
+.sth2, .smh2 {
+    font-size: 1rem;
+}
+
+.sign-alt  {
+    padding: .2rem;
+    gap: .2rem;
+    margin: none;
+}
+
+.sbtn{
+    font-size: .5rem;
+    padding: .5rem;
+    width: 20%;
+    margin-top: .5rem;
+}
+
+.signopt {
+    position: relative;
+    margin: .2rem 1.9rem;
+}
+
+.apple,
+.google,
+.x  {
+    padding: 1rem 3rem;
+    margin-bottom: 2rem;
+}
+
+.linetext {
+    margin: 0 5rem;
+}
+
+form {
+    margin: 1.5rem 3rem;
+}
+
+.bottum input {
+    padding: .5rem;
+}
+
+form label,
+form p {
+    font-size: .5rem;
+}
+
+.logbtn {
+    padding: .5rem;
+    font-size: .5rem;
+}
+
+/* categories page */
+
+.buy, .rent {
+    overflow-x: hidden;
+}
+
+.cbh2 {
+    font-size: 1rem;
+    padding: .5rem;
+}
+
+.sedan,
+.suv,
+.pickup,
+.minivan{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: .75rem
+}
+
+.cardcontent li {
+    padding: .1.5rem 1rem;
+    font-size: .6rem;
+}
+
+.cbbtn {
+    padding: .5rem ;
+    font-size: .5rem;
+}
+
+}
